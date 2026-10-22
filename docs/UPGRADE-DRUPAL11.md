@@ -37,6 +37,34 @@ Back up that environment's database, uploaded files and current code first.
 Run its existing Drupal 10 database updates before replacing the code. Use
 the committed lock files rather than resolving fresh versions on the server.
 
+### Plesk: preserve environment-specific settings
+
+`sites/default/settings.local.php` and `.DS_Store` files are no longer
+versioned. Keep production's working `settings.local.php` on the server;
+local development settings must not replace it.
+
+Before the first deployment of this cleanup, copy production's
+`sites/default/settings.local.php` to a protected location outside both
+the Git checkout and the public web root. A checkout that previously tracked
+these files may remove them during this deployment, even though they are now
+ignored. Restore the production settings immediately after deploying the code
+and before running Composer or Drush.
+
+If Plesk reports `unable to unlink old ... Permission denied`, have the server
+administrator check ownership and write access for the deployment user on
+`sites/default`, including ACLs or immutable flags if needed. Allow only the
+access needed for deployment and restore Drupal's directory protection
+afterward. Do not use world-writable permissions. `.DS_Store` can be discarded;
+preserve the production settings backup until the site is verified.
+
+If Plesk deploys from a separate Git checkout, check both that checkout and
+the live site: the backup must come from the working production site, and the
+restored settings must be in the live site's `sites/default` directory.
+Future Git deployments will leave these ignored files alone, provided no
+deployment hook explicitly deletes untracked or ignored files.
+
+### Upgrade commands
+
 ```sh
 vendor/bin/drush updatedb --yes
 vendor/bin/drush state:set system.maintenance_mode 1

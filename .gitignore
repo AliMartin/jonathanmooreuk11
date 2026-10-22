@@ -2,6 +2,9 @@
 #
 # earlier versions of Drupal are tracked in `community/PHP/`
 
+# Ignore macOS folder metadata at any depth
+.DS_Store
+
 # Ignore ddev config files
 /.ddev
 
@@ -62,7 +65,6 @@
 # Allow these files
 !/.cpanel.yml
 !/sync/*
-!/sites/default/settings.local.php
 /autoload_runtime.php
 
 # Local reference resources
