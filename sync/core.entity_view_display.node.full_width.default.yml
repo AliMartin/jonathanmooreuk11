@@ -1,0 +1,28 @@
+uuid: 7070244b-e8d0-4f9f-9df9-cbda30f98ad5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.full_width.body
+    - node.type.full_width
+  module:
+    - text
+    - user
+id: node.full_width.default
+targetEntityType: node
+bundle: full_width
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

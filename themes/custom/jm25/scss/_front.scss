@@ -1,0 +1,128 @@
+body.path-frontpage {
+
+  overflow: inherit;
+  overflow-x: inherit;
+
+  h1 {
+    font-size: clamp(1.8rem, 2vw + 1rem, 3rem);
+    text-align: center;
+    margin-bottom: 60px;
+    text-shadow: 1px 1px 0 #000, 2px 2px 5px rgba(0,0,0,0.5);
+  }
+
+  main {
+    .region-content {
+      z-index: 100;
+      max-width: 1200px;
+      margin: 10vh auto 150px auto;
+      background-color: inherit;
+      padding: 0;
+      border: inherit;
+      border-radius: inherit;
+      box-shadow: inherit;
+      backdrop-filter: inherit;
+    }
+  }
+
+  .splide--skin--fullscreen {
+    z-index: -1;
+  }
+
+  .splide--field-quotes {
+    max-width: 850px;
+    text-align: center;
+    margin: 0 auto 60px auto;
+
+    .field--name-field-quote {
+      font-size: clamp(1.2rem, 2vw + 1rem, 1.8rem);
+      line-height: 1.1;
+      font-weight: 800;
+      margin-bottom: 5px;
+      text-shadow: 1px 1px 0 #000, 2px 2px 5px rgba(0,0,0,0.5);
+    }
+
+    .field--name-field-author {
+      font-weight: 500;
+      text-shadow: 1px 1px 0 #000, 2px 2px 5px rgba(0,0,0,0.5);
+    }
+
+    button {
+      display: none;
+    }
+  }
+
+  #home-page-talents {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 90px;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
+  
+    > div {
+      background-color: rgba(0,0,0,0.8);
+      padding: 30px;
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 15px;
+      box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.85);
+      text-align: center;
+      backdrop-filter: blur(5px);
+
+    }
+
+    img {
+      width: 260px;
+      height: auto;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.25);
+      margin: 0 0 15px 0;
+      filter: grayscale(100%);
+    }
+
+    .text {
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      border: inherit;
+      color: $white;
+      font-weight: 700;
+
+      &:hover {
+        background-color: $red;
+      }
+    }
+  }
+
+  #block-jm25-views-block-news-block-1 {
+    max-width: 850px;
+    margin: 0 auto 90px auto;
+    background-color: rgba(0,0,0,0.8);
+    padding: 30px;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 15px;
+    box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(5px);
+
+    h2 {
+      text-align: center;
+    }
+
+    .views-row {
+      margin-bottom: 30px;
+      img {
+        margin: 0 30px 0 0;
+
+        @media (max-width: 768px) {
+          margin: 0;
+        }
+      }
+    }
+    
+    .views-row:last-of-type {
+      margin-bottom: 0;
+    }  }
+}

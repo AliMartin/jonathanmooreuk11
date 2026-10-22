@@ -1,0 +1,22 @@
+uuid: 8691c590-0d36-49f9-b1b6-febdc1400edb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - jm25
+_core:
+  default_config_hash: ztA4EZK2uSEWv3J0U_UOnjEHgm3ctN6ecOXLbBCJPSw
+id: jm25_messages
+theme: jm25
+region: content
+weight: -13
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

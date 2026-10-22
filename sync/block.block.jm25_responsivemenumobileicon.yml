@@ -1,0 +1,20 @@
+uuid: 464942ca-d6e2-47e4-8440-059d43aa9d5c
+langcode: en
+status: true
+dependencies:
+  module:
+    - responsive_menu
+  theme:
+    - jm25
+id: jm25_responsivemenumobileicon
+theme: jm25
+region: nav_additional
+weight: -9
+provider: null
+plugin: responsive_menu_toggle
+settings:
+  id: responsive_menu_toggle
+  label: 'Responsive menu mobile icon'
+  label_display: '0'
+  provider: responsive_menu
+visibility: {  }

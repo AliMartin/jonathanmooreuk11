@@ -1,0 +1,23 @@
+uuid: 71b41479-81f6-4938-b2ba-16aea3da911a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b8256b6d-bfe5-4128-b4cc-ee839827a905'
+  module:
+    - block_content
+  theme:
+    - jm25
+id: jm25_footertext
+theme: jm25
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:b8256b6d-bfe5-4128-b4cc-ee839827a905'
+settings:
+  id: 'block_content:b8256b6d-bfe5-4128-b4cc-ee839827a905'
+  label: 'Footer text'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,7 @@
+status: 1
+pattern: '[node:field_production]'
+escape: true
+dependencies:
+  config:
+    - node.type.credit
+new_content_behavior: 1

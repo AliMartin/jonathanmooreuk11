@@ -1,0 +1,22 @@
+uuid: be8c6fc0-b1fb-4dee-93b4-149467ac71c4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - jm25
+_core:
+  default_config_hash: jjg5YIMKfVw4WzAMzRc704yLOXs-RN4kOtC3Dqwqo4E
+id: jm25_content
+theme: jm25
+region: content
+weight: -8
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

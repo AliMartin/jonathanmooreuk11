@@ -1,0 +1,28 @@
+uuid: 17e59d6b-94a5-4ed5-afa0-7c71e83c7172
+langcode: en
+status: false
+dependencies:
+  enforced:
+    module:
+      - slick
+_core:
+  default_config_hash: R44sHtkxxZrBiHA2kQiOrgfOwXDce6s8fpQCTUoDhf0
+id: slideshow
+name: slideshow
+weight: -10
+label: Slideshow
+group: ''
+skin: fullwidth
+breakpoints: 0
+optimized: true
+options:
+  options__active_tab: edit-options-settings
+  settings:
+    accessibility: false
+    lazyLoad: ondemand
+    rows: 0
+    slidesToShow: 1
+    speed: 1000
+    swipe: false
+    touchMove: false
+    waitForAnimate: false

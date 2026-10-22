@@ -1,0 +1,253 @@
+// Bootstrap variables (overrides).
+
+
+// Colour generator
+// https://huemint.com/bootstrap-basic/#palette=687dac-ffffff-040006-821f09-c16712-636f59
+
+
+$form-text-margin-top: 0;
+$legend-font-size: 1rem;
+$table-cell-padding-x: .75rem;
+
+
+// scss-docs-start display-headings
+$display-font-sizes: (
+  1: 4rem,
+  2: 3.5rem,
+  3: 3rem,
+  4: 2.5rem,
+  5: 2rem,
+  6: 1.5rem,
+) !default;
+
+$form-text-margin-top: 0 !default;
+$legend-font-size: 1rem !default;
+$table-cell-padding-x: 0.75rem;
+
+// Set the widest xxl breakpoint at 1600px with a container width of 1520px
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px,
+);
+
+// Breakpoint variables. These are the three primary ones we want to stick to.
+$jm25-breakpoint-sm: map-get($grid-breakpoints, "sm");
+$jm25-breakpoint-md: map-get($grid-breakpoints, "md");
+$jm25-breakpoint-xl: map-get($grid-breakpoints, "xl");
+
+// Additional breakpoint variables to follow bootstrap 5, however only use if truly needed. That's the plan anyway.
+$jm25-breakpoint-xs: map-get($grid-breakpoints, "xs");
+$jm25-breakpoint-lg: map-get($grid-breakpoints, "lg");
+$jm25-breakpoint-xxl: map-get($grid-breakpoints, "xxl");
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1520px,
+);
+
+// Colours
+// $white:         #f5f5f7 !default;
+// $black:         #000000 !default;
+// $gray:          #1c1c1c !default;
+$yellow:        #f2b510 !default;
+$orange:        #f98105 !default;
+// $red:           #d94e4c !default;
+$green:         #5dbb63 !default;
+$blue:          #4682b4 !default;
+
+$white:         #f6f6f3 !default;
+$black:         #000000 !default;
+$taup:          #b49f9d !default;
+$red:           #d14242 !default;
+$brown:         #aa8b6b !default;
+$gray:          #30353a !default;
+
+
+$color-variants: (
+    100:  -10%,
+    200:  -25%,
+    300:  -50%,
+    400:  -75%,
+    500:  100%,
+    600:   75%,
+    700:   50%,
+    800:   25%,
+    900:   15%
+);
+
+$colors: () !default;
+$colors: map-merge((
+  "yellow":     $yellow,
+  "orange":     $orange,
+  "red":        $red,
+  "green":      $green,
+  "blue":       $blue,
+  "white":      $white,
+  "gray":       $gray,
+), $colors);
+
+//  Add color variants to $colors
+@each $color-name, $color in $colors {       
+    @each $variant-name, $percent in $color-variants {
+        $mix-color: if($percent < 0%, white, black);
+        $colors: map-merge($colors, ($color-name+'-'+$variant-name: mix($color, $mix-color, abs($percent))));
+    }
+}
+
+/* remap grays */
+
+$gray-100: map-get($colors, gray-100);
+$gray-200: map-get($colors, gray-200);
+$gray-300: map-get($colors, gray-300);
+$gray-400: map-get($colors, gray-400);
+$gray-500: map-get($colors, gray-500);
+$gray-600: map-get($colors, gray-600);
+$gray-700: map-get($colors, gray-700);
+$gray-800: map-get($colors, gray-800);
+$gray-900: map-get($colors, gray-900);
+
+$enable-hover-media-query: true;
+
+/* Bootstrap 4 mixins - no change */
+
+@mixin hover {
+// TODO: re-enable along with mq4-hover-shim
+//  @if $enable-hover-media-query {
+//    // See Media Queries Level 4: https://drafts.csswg.org/mediaqueries/#hover
+//    // Currently shimmed by https://github.com/twbs/mq4-hover-shim
+//    @media (hover: hover) {
+//      &:hover { @content }
+//    }
+//  }
+//  @else {
+    &:hover { @content; }
+//  }
+}
+
+@mixin hover-focus {
+  @if $enable-hover-media-query {
+    &:focus {
+      @content;
+    }
+    @include hover { @content; }
+  } @else {
+    &:focus,
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin text-emphasis-variant($parent, $color) {
+  #{$parent} {
+    color: $color !important;
+  }
+  a#{$parent} {
+    @include hover-focus {
+      color: darken($color, 10%) !important;
+    }
+  }
+}
+
+@mixin bg-variant($parent, $color) {
+  #{$parent} {
+    background-color: $color !important;
+  }
+  a#{$parent} {
+    @include hover-focus {
+      background-color: darken($color, 10%) !important;
+    }
+  }
+}
+
+
+/* from Bootstrap 4 utilities - replaced $theme-colors with $colors */
+
+// text colors
+@each $color, $value in $colors {
+  @include text-emphasis-variant(".text-#{$color}", $value);
+}
+
+// background colors
+@each $color, $value in $colors {
+  @include bg-variant(".bg-#{$color}", $value);
+}
+
+// background text contrast
+@each $color, $value in $colors {
+  .bg-#{$color} {
+    color: color-yiq($value);
+  }
+}
+
+// border colors
+@each $color, $value in $colors {
+  .border-#{$color} {
+    border-color: $value !important;
+  }
+}
+
+$primary: $taup;
+$secondary: $orange;
+$success: $green;
+$info: $blue;
+$warning: $yellow;
+$danger: $red;
+$light: $white;
+
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "black":      $black,
+);
+
+
+// Fonts
+$font-family-sans-serif: "Plus Jakarta Sans", sans-serif;
+$font-family-base: $font-family-sans-serif;
+$font-size-base: 1.2rem;
+$line-height-base: 1.5;
+$font-weight-normal: 200;
+$font-weight-bold: 600;
+$body-color: $white;
+
+$headings-font-family: "Plus Jakarta Sans", sans-serif;
+$headings-font-weight: 800;
+$headings-color: $white;
+
+$h1-font-size: $font-size-base * 3.5;
+$h2-font-size: $font-size-base * 1.75;
+$h3-font-size: $font-size-base * 1.5;
+$h4-font-size: $font-size-base * 1.25;
+$h5-font-size: $font-size-base * 1.15;
+$h6-font-size: $font-size-base;
+
+// Hyperlinks
+$link-color: $taup;
+$link-decoration: none;
+$link-hover-color: $red;
+$link-hover-decoration: none;
+
+// Image border radius
+$border-radius-img: 10px;
+
+// Border radius
+$border-radius: 20px;
+
+// Border thicknesses
+$border-thick: 6px;
+$border-thin: 4px;

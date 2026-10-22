@@ -1,0 +1,20 @@
+uuid: c7e10941-6760-4677-a1ca-f28a9f7a436f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - jm25
+_core:
+  default_config_hash: '-gBfZf7dbxWBvCUVwMWLy-5D3pq_oP72I3aGuYrahl8'
+id: jm25_page_title
+theme: jm25
+region: content
+weight: -9
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

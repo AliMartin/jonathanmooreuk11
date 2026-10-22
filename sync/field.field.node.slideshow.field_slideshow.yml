@@ -1,0 +1,28 @@
+uuid: 34b6fa05-f3b2-49ee-9f47-8b79ceea798e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slideshow
+    - media.type.image
+    - node.type.slideshow
+id: node.slideshow.field_slideshow
+field_name: field_slideshow
+entity_type: node
+bundle: slideshow
+label: Slideshow
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

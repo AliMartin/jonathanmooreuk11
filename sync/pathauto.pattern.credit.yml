@@ -1,0 +1,23 @@
+uuid: 3a42e9d8-3ad0-497b-83af-b75d0a6244d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.credit
+  module:
+    - node
+id: credit
+label: Credit
+type: 'canonical_entities:node'
+pattern: '/credit/[node:title]'
+selection_criteria:
+  577ba89e-92a4-4476-b3e6-7f825a8ef686:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      credit: credit
+selection_logic: and
+weight: -5
+relationships: {  }

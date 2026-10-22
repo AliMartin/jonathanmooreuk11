@@ -1,0 +1,90 @@
+uuid: 56be4bc5-be3a-4be7-905d-0b89bd162ced
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.credit.field_character
+    - field.field.node.credit.field_company
+    - field.field.node.credit.field_content_link
+    - field.field.node.credit.field_credit_type
+    - field.field.node.credit.field_director
+    - field.field.node.credit.field_note
+    - field.field.node.credit.field_premier
+    - field.field.node.credit.field_production
+    - field.field.node.credit.field_venue
+    - node.type.credit
+  module:
+    - user
+id: node.credit.teaser
+targetEntityType: node
+bundle: credit
+mode: teaser
+content:
+  field_character:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_company:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_credit_type:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_director:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_note:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_premier:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_production:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_venue:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+hidden:
+  field_content_link: true
+  links: true

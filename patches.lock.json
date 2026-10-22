@@ -1,0 +1,17 @@
+{
+    "_hash": "79928ea0fe3a757a3a1bcb6112cce493b54d46c9b377ca93b85694379c6abdcf",
+    "patches": {
+        "drupal/background_image": [
+            {
+                "package": "drupal/background_image",
+                "description": "Drupal 11 compatibility while preserving the 2.0.2 image model",
+                "url": "patches/background-image-drupal11.patch",
+                "sha256": "dcf4192c4b12777e8b097b412a182dee1bb2a099d04109c0fc320ea2b5de4600",
+                "depth": 1,
+                "extra": {
+                    "provenance": "root"
+                }
+            }
+        ]
+    }
+}

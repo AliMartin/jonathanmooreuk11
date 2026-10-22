@@ -1,0 +1,27 @@
+uuid: 9cf74683-bec7-4fa8-ac18-bcc5249319bf
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - jm25
+_core:
+  default_config_hash: kKQN_eYu6xZMCW3Dr_aIbKsoNRDV1K2s6HkdlFilSyc
+id: jm25_main_navigation
+theme: jm25
+region: nav_main
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: true
+visibility: {  }

@@ -1,0 +1,29 @@
+uuid: 810b9705-c42d-4054-a148-7fc81bc4177c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.credit_acting_television
+  module:
+    - system
+    - views
+  theme:
+    - jm25
+id: jm25_views_block__credit_acting_television_block_1
+theme: jm25
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:credit_acting_television-block_1'
+settings:
+  id: 'views_block:credit_acting_television-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /credits

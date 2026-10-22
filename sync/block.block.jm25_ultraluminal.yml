@@ -1,0 +1,23 @@
+uuid: 0be68d3c-0da4-4bf1-b3f2-da0d1177b3ad
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:201d98a3-0578-4663-adae-12c25c09d801'
+  module:
+    - block_content
+  theme:
+    - jm25
+id: jm25_ultraluminal
+theme: jm25
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:201d98a3-0578-4663-adae-12c25c09d801'
+settings:
+  id: 'block_content:201d98a3-0578-4663-adae-12c25c09d801'
+  label: Ultraluminal
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

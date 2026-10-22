@@ -1,0 +1,22 @@
+uuid: 9ae2ea7c-731d-48fe-bfc2-9f7a26123ac5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.front
+id: node.front.status
+field_name: status
+entity_type: node
+bundle: front
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

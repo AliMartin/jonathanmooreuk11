@@ -1,0 +1,27 @@
+uuid: 7d416ad8-1e1c-46da-92c3-0fd0208e4af3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attachments
+    - node.type.review
+  module:
+    - file
+id: node.review.field_attachments
+field_name: field_attachments
+entity_type: node
+bundle: review
+label: Downloads
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf'
+  max_filesize: ''
+  description_field: true
+field_type: file

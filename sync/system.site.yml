@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+langcode: en
+uuid: e2d92679-2f99-4b1e-a4ca-c860c23a5fe7
+name: 'Jonathan Moore'
+mail: noreply@jonathanmooreuk.com
+slogan: ''
+page:
+  403: /node/231
+  404: /node/231
+  front: /node/231
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: ''

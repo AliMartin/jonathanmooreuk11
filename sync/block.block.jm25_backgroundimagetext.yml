@@ -1,0 +1,20 @@
+uuid: 89c70c18-bfc4-4368-9e85-20bd733fc5bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - background_image
+  theme:
+    - jm25
+id: jm25_backgroundimagetext
+theme: jm25
+region: background_image
+weight: 0
+provider: null
+plugin: background_image_text
+settings:
+  id: background_image_text
+  label: 'Background Image - Text'
+  label_display: ''
+  provider: background_image
+visibility: {  }

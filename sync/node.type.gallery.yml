@@ -1,0 +1,17 @@
+uuid: 8b32d0af-aa53-4c9e-a333-e8553897588f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Gallery
+type: gallery
+description: 'Add a <em>gallery</em> to the website.'
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: false

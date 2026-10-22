@@ -1,0 +1,23 @@
+uuid: 6613bee6-1ae2-4490-976b-025c80661916
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.review
+  module:
+    - node
+id: review
+label: Review
+type: 'canonical_entities:node'
+pattern: '/review/[node:field_talent]/[node:title]'
+selection_criteria:
+  e087ab84-954e-4984-b8b6-362bef74ef7a:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      review: review
+selection_logic: and
+weight: -5
+relationships: {  }

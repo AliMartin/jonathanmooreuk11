@@ -1,0 +1,15 @@
+uuid: 52cbe64c-92d0-41c5-b130-b1afc95b4456
+langcode: en
+status: true
+dependencies: {  }
+name: video_thumbnail
+label: 'Video thumbnail'
+effects:
+  5977051b-f65e-4b36-b18a-ad79d2e02432:
+    uuid: 5977051b-f65e-4b36-b18a-ad79d2e02432
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 220
+      height: 140
+      anchor: center-center

@@ -1,0 +1,20 @@
+uuid: 0db8fb42-e98f-4c06-a5be-e8943d57d6cf
+langcode: en
+status: true
+dependencies:
+  module:
+    - tb_megamenu
+  theme:
+    - jm25
+id: jm25_secondarymenu
+theme: jm25
+region: nav_additional
+weight: -10
+provider: null
+plugin: 'tb_megamenu_menu_block:secondary-menu'
+settings:
+  id: 'tb_megamenu_menu_block:secondary-menu'
+  label: 'Secondary menu'
+  label_display: '0'
+  provider: tb_megamenu
+visibility: {  }

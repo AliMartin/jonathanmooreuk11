@@ -1,0 +1,19 @@
+uuid: a743d9e9-eb41-4cb1-91a6-8c92e3ae3afe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_company
+    - node.type.credit
+id: node.credit.field_company
+field_name: field_company
+entity_type: node
+bundle: credit
+label: Company
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

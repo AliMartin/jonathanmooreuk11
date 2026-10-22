@@ -1,0 +1,23 @@
+uuid: 811a6188-a44e-4dfa-9c8f-f0271f1d5a82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_display_in_video_library
+    - media.type.video
+id: media.video.field_display_in_video_library
+field_name: field_display_in_video_library
+entity_type: media
+bundle: video
+label: 'Display in video library'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

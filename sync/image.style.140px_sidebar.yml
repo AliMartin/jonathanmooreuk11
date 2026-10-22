@@ -1,0 +1,15 @@
+uuid: 0350b168-73b8-451d-8a22-e0f1fc91a5b3
+langcode: en
+status: true
+dependencies: {  }
+name: 140px_sidebar
+label: '140px sidebar'
+effects:
+  f7f21f79-6109-4472-a5f0-25ecd5071eb2:
+    uuid: f7f21f79-6109-4472-a5f0-25ecd5071eb2
+    id: image_scale
+    weight: 1
+    data:
+      width: 140
+      height: null
+      upscale: false

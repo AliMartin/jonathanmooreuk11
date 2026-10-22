@@ -1,0 +1,21 @@
+uuid: 28cdd2d9-19cf-4fdd-b17b-d858fee2a0e7
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - jm25
+id: jm25_searchform
+theme: jm25
+region: mega_menu
+weight: -9
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: '0'
+  provider: search
+  page_id: null
+visibility: {  }

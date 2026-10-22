@@ -1,0 +1,23 @@
+uuid: 6a3f0bab-1dc9-4c7d-beb0-b51b015431aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_display_in_video_library
+    - media.type.remote_video
+id: media.remote_video.field_display_in_video_library
+field_name: field_display_in_video_library
+entity_type: media
+bundle: remote_video
+label: 'Display in video library'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,19 @@
+uuid: 8e424c60-c5c4-4c7d-b3be-b829a26d7439
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_character
+    - node.type.credit
+id: node.credit.field_character
+field_name: field_character
+entity_type: node
+bundle: credit
+label: Character
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

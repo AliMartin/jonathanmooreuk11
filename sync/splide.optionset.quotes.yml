@@ -1,0 +1,84 @@
+uuid: 4bac3092-abfc-44ab-880a-0e053d633c02
+langcode: en
+status: false
+dependencies:
+  enforced:
+    module:
+      - splide
+_core:
+  default_config_hash: 98xuTY7JdtWNtvm2FWjcsRqEPzLuEGq2XlF-wBXNVmg
+id: quotes
+name: quotes
+weight: -10
+label: Quotes
+group: ''
+skin: default
+breakpoint: 0
+optimized: false
+options:
+  settings:
+    type: fade
+    mediaQuery: max
+    rewind: true
+    rewindByDrag: false
+    speed: 1000
+    rewindSpeed: 0
+    waitForTransition: false
+    width: '0'
+    height: '0'
+    fixedWidth: '0'
+    fixedHeight: '0'
+    heightRatio: '0'
+    autoWidth: false
+    autoHeight: false
+    perPage: 1
+    perMove: 0
+    clones: 0
+    cloneStatus: false
+    start: 0
+    focus: '0'
+    gap: '0'
+    padding: ''
+    easing: 'cubic-bezier(.42,.65,.27,.99)'
+    arrows: 'false'
+    arrowPath: ''
+    pagination: 'false'
+    paginationDirection: ltr
+    paginationKeyboard: true
+    omitEnd: false
+    autoplay: true
+    interval: 6000
+    pauseOnHover: false
+    pauseOnFocus: false
+    progress: false
+    resetProgress: true
+    keyboard: 'false'
+    drag: 'false'
+    snap: false
+    noDrag: ''
+    dragMinThreshold: 10
+    flickVelocityThreshold: 0.6
+    flickPower: 600
+    flickMaxPages: 1
+    direction: ltr
+    cover: false
+    slideFocus: false
+    focusableNodes: 'a, button, textarea, input, select, iframe'
+    isNavigation: false
+    trimSpace: 'true'
+    live: false
+    updateOnMove: false
+    classes: ''
+    i18n: ''
+    autoScroll: ''
+    intersection: ''
+    down: false
+    downTarget: ''
+    downOffset: 0
+    easingOverride: ''
+    randomize: false
+    wheel: false
+    releaseWheel: false
+    wheelMinThreshold: 0
+    wheelSleep: 0
+    animation: ''

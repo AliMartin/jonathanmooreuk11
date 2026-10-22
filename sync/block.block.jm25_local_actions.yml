@@ -1,0 +1,20 @@
+uuid: 81564a81-c978-40ac-9a3a-28f8d8656c06
+langcode: en
+status: true
+dependencies:
+  theme:
+    - jm25
+_core:
+  default_config_hash: iDglyvlMLrR4_FJeImAXzG3hBd_-4G5mcCEZ3dwcozM
+id: jm25_local_actions
+theme: jm25
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,28 @@
+_core:
+  default_config_hash: U7p9WqE0yMw-SNTivefWcS3D61GPAcUrlQxPCm4mYxQ
+horizontal_menu: main
+horizontal_depth: 9
+off_canvas_menus: 'main, secondary-menu'
+horizontal_wrapping_element: nav
+horizontal_breakpoint: lg-min
+horizontal_media_query: '(min-width: 992px)'
+include_css: true
+off_canvas_position: right
+off_canvas_theme: theme-black
+pagedim: pagedim-black
+horizontal_superfish: true
+horizontal_superfish_delay: 300
+horizontal_superfish_speed: 100
+horizontal_superfish_speed_out: 100
+horizontal_superfish_hoverintent: true
+drag: false
+breakpoint_css_filepath: 'public://css'
+use_breakpoint: true
+allow_admin: false
+wrapper_admin: true
+wrapper_theme: true
+modify_viewport: true
+use_bootstrap: false
+toolbar_override: false
+use_polyfills: false
+override_toolbar: true

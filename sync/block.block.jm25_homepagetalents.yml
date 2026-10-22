@@ -1,0 +1,28 @@
+uuid: a2b98566-1276-4ff5-8b97-50c18a42c881
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9fc0686b-8b0d-4d90-838d-3e2e57b6f0ed'
+  module:
+    - block_content
+    - system
+  theme:
+    - jm25
+id: jm25_homepagetalents
+theme: jm25
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:9fc0686b-8b0d-4d90-838d-3e2e57b6f0ed'
+settings:
+  id: 'block_content:9fc0686b-8b0d-4d90-838d-3e2e57b6f0ed'
+  label: 'Home page talents'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

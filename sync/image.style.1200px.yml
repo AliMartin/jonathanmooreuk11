@@ -1,0 +1,15 @@
+uuid: 32997f8d-3d7d-4626-8c5e-3d9571780c09
+langcode: en
+status: true
+dependencies: {  }
+name: 1200px
+label: 1200px
+effects:
+  f4bd8f6e-3c5e-4948-a127-400abd42bb32:
+    uuid: f4bd8f6e-3c5e-4948-a127-400abd42bb32
+    id: image_scale
+    weight: 1
+    data:
+      width: 1200
+      height: null
+      upscale: true

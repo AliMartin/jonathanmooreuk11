@@ -1,0 +1,5 @@
+selectors: ".node\r\n.field--name-field-media-oembed-video"
+custom_vendors: 'https://vimeo.com'
+ignore_selectors: ''
+_core:
+  default_config_hash: 2VIFfYIzLIphEpkJSH9KfhEE0P66ieHfusDj6QMJIzY

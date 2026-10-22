@@ -1,0 +1,9 @@
+uuid: 9b2e6570-8be3-4d76-b5a1-c07b8c7fdf96
+langcode: en
+status: true
+dependencies: {  }
+name: Talent
+vid: talent
+description: null
+weight: 0
+new_revision: false

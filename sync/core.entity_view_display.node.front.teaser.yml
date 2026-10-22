@@ -1,0 +1,34 @@
+uuid: a768f9fa-a587-44bd-a10c-b330b61b2c82
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.front.body
+    - field.field.node.front.field_media_gallery
+    - field.field.node.front.field_quotes
+    - node.type.front
+  module:
+    - text
+    - user
+id: node.front.teaser
+targetEntityType: node
+bundle: front
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_media_gallery: true
+  field_quotes: true

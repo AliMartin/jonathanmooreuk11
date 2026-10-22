@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Jonathan Moore 2025 theme file.
+ */
+
+use Drupal\Core\Url;
+
+/**
+ * Adds page URL to body class
+ * Implements hook_preprocess_html().
+ */
+function jm25_preprocess_html(array &$variables) {
+  $request = \Drupal::request();
+  $path = $request->getPathInfo(); // e.g. "/about/contact"
+  
+  // Sanitize and split into segments.
+  $segments = array_filter(explode('/', $path));
+  
+  // Add each segment as a body class.
+  foreach ($segments as $segment) {
+    $variables['attributes']['class'][] = 'path-' . \Drupal\Component\Utility\Html::getClass($segment);
+  }
+
+  // Optionally add the full path as one class.
+  $full_class = 'page-url-' . \Drupal\Component\Utility\Html::getClass(implode('-', $segments));
+  $variables['attributes']['class'][] = $full_class;
+}

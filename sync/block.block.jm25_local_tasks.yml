@@ -1,0 +1,22 @@
+uuid: a1a41b8f-6d1c-4666-aeb3-ad464340ed66
+langcode: en
+status: true
+dependencies:
+  theme:
+    - jm25
+_core:
+  default_config_hash: Rj4qZsj2UN1LxnBA8l8ZDGyRmq911Tx80yLbFGuuqEc
+id: jm25_local_tasks
+theme: jm25
+region: content
+weight: -12
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

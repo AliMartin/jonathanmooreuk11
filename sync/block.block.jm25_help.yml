@@ -1,0 +1,22 @@
+uuid: 9da54d60-416f-4364-899b-dca479162d33
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - jm25
+_core:
+  default_config_hash: 7WMxDAYBIfddltq0J4zwdlDZlvFlD35MHnNiwR7zUjM
+id: jm25_help
+theme: jm25
+region: content
+weight: -11
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

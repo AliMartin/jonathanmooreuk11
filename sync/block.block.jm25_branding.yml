@@ -1,0 +1,25 @@
+uuid: 88c0f6b1-a986-425f-9b85-08cba4ecdb93
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - jm25
+_core:
+  default_config_hash: tA4ezFlSlLgQXL3VJsqhbg067XlI9XhKr8dbQIXx3zE
+id: jm25_branding
+theme: jm25
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

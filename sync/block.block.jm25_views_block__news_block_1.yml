@@ -1,0 +1,29 @@
+uuid: 1fa15e4b-9575-4aa4-979e-c4fad66fd4d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news
+  module:
+    - system
+    - views
+  theme:
+    - jm25
+id: jm25_views_block__news_block_1
+theme: jm25
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:news-block_1'
+settings:
+  id: 'views_block:news-block_1'
+  label: 'Latest news'
+  label_display: visible
+  provider: views
+  views_label: 'Latest news'
+  items_per_page: '3'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

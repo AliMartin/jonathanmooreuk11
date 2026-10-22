@@ -1,0 +1,17 @@
+uuid: 2265deed-d3c8-45f7-8639-ae6f035085e2
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Slideshow
+type: slideshow
+description: 'Add an image to the top slideshow.'
+help: null
+new_revision: false
+preview_mode: 0
+display_submitted: false

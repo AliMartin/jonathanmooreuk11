@@ -1,0 +1,17 @@
+uuid: c9eaa131-48de-4032-99d3-bd65080a02c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Credit
+type: credit
+description: 'Add a <em>credit</em> to the website.'
+help: null
+new_revision: false
+preview_mode: 0
+display_submitted: false

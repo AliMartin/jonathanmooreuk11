@@ -1,0 +1,29 @@
+uuid: 2a2a1e38-a1b6-49a2-9d50-7037add451c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.credit_music_theatre
+  module:
+    - system
+    - views
+  theme:
+    - jm25
+id: jm25_views_block__credit_music_theatre_block_1
+theme: jm25
+region: content
+weight: 2
+provider: null
+plugin: 'views_block:credit_music_theatre-block_1'
+settings:
+  id: 'views_block:credit_music_theatre-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /credits

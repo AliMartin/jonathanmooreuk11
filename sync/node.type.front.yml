@@ -1,0 +1,17 @@
+uuid: b3868b19-284c-4dae-a9db-cc4ee1642102
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Front
+type: front
+description: 'A custom page layout for the <em>front</em> page.'
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: false

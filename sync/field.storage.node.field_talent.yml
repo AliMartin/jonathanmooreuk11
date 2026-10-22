@@ -1,0 +1,20 @@
+uuid: 1f33a91c-a8ae-4998-a7ee-145315d78f27
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_talent
+field_name: field_talent
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,38 @@
+uuid: 24f2d7a5-36e0-4e97-9a8d-42f00a573242
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_image
+    - media.type.video
+  module:
+    - image
+id: media.video.field_media_image
+field_name: field_media_image
+entity_type: media
+bundle: video
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 9840d26c-260a-4196-984f-56ca369ca5dd
+    alt: 'Jonathan Moore'
+    title: 'Jonathan Moore'
+    width: 1639
+    height: 1234
+field_type: image

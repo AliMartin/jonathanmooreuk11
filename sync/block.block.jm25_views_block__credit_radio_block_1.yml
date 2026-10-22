@@ -1,0 +1,29 @@
+uuid: db51868b-661d-4b99-9051-db8808f98004
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.credit_radio
+  module:
+    - system
+    - views
+  theme:
+    - jm25
+id: jm25_views_block__credit_radio_block_1
+theme: jm25
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:credit_radio-block_1'
+settings:
+  id: 'views_block:credit_radio-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /credits

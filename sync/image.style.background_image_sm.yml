@@ -1,0 +1,17 @@
+uuid: df378a5b-70d6-411f-9990-af103d63f9e9
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dGsUvvsh1TC4T5S-oISuOmRsI8R-RyC9A9h6urqURCQ
+name: background_image_sm
+label: 'Background Image: Small'
+effects:
+  ff73de83-24ba-4dbe-bd5f-56c9c045d59b:
+    uuid: ff73de83-24ba-4dbe-bd5f-56c9c045d59b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 768
+      height: 512
+      anchor: center-center

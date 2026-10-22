@@ -1,0 +1,21 @@
+uuid: bec64475-e4c9-464f-bc04-a75ef9205646
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.production
+  module:
+    - text
+id: taxonomy_term.production.default
+targetEntityType: taxonomy_term
+bundle: production
+mode: default
+content:
+  description:
+    type: text_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
